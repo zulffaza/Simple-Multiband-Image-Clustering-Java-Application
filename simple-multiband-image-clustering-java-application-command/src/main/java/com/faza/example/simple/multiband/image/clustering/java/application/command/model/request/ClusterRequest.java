@@ -15,7 +15,7 @@ import java.util.List;
 
 @Data
 @Builder
-public class ClusterCommandRequest {
+public class ClusterRequest {
 
     private Integer numberOfCluster;
 
