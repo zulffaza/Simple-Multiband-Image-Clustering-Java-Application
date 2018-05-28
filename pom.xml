@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.faza.example</groupId>
+    <artifactId>simple-multiband-image-clustering-java-application</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <modules>
+        <module>simple-multiband-image-clustering-java-application-model</module>
+        <module>simple-multiband-image-clustering-java-application-strategy</module>
+        <module>simple-multiband-image-clustering-java-application-command</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+    <name>Simple Multiband Image Clustering Java Application</name>
+    <description>
+        Simple example for data mining multiband image clustering algorithm implemented on Java based application
+    </description>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <lombok.version>1.16.20</lombok.version>
+        <junit.version>4.12</junit.version>
+        <mockito.version>2.18.3</mockito.version>
+        <hamcrest.version>1.3</hamcrest.version>
+        <assertj.version>3.9.1</assertj.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+            <version>${hamcrest.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
