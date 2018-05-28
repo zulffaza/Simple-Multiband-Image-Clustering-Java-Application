@@ -1,6 +1,6 @@
 package com.faza.example.simple.multiband.image.clustering.java.application.command.model.response;
 
-import com.faza.example.simple.multiband.image.clustering.java.application.model.Cluster;
+import com.faza.example.simple.multiband.image.clustering.java.application.model.Pixel;
 import lombok.Builder;
 import lombok.Data;
 
@@ -14,7 +14,9 @@ import java.util.List;
 
 @Data
 @Builder
-public class ClusterCommandResponse {
+public class ReadDataSetResponse {
 
-    private List<Cluster> clusters;
+    private Integer numberOfCluster;
+
+    private List<Pixel> pixels;
 }
